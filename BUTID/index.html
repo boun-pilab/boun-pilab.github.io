@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Exploring Data-Driven Chemical SMILES Tokenization Approaches to Identify Key Protein-Ligand Binding Moieties">
+  <meta name="keywords" content="Exploring Data-Driven Chemical SMILES Tokenization Approaches to Identify Key Protein-Ligand Binding Moieties">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BUTID: A Large-scale Sign Language Translation Dataset and Benchmarks for
+    Turkish Sign Language</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/js/brands.min.css">
+
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script defer src="./static/js/brands.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://tabilab.cmpe.boun.edu.tr">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">BUTID: A Large-scale Sign Language Translation Dataset and Benchmarks for
+            Turkish Sign Language</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://gokceuludogan.github.io">Karahan Şahin</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://rizaozcelik.github.io">Lale Akarun</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://rizaozcelik.github.io">Kadir Gökgöz</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com.tr/citations?user=uyz9d2UAAAAJ&hl=en">Murat Saraçlar</a><sup>2</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Surrey,</span>
+            <span class="author-block"><sup>2</sup>Bogazici University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!--
+              <span class="link-block">
+                <a href="https://doi.org/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              -->
+
+              <span class="link-block">
+                <a href="./static/CVPR_2025_SLRTP_Submission (2).pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->  
+<!--               <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/karahan-sahin/BUTID"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Materials Link. -->
+              <span class="link-block">
+                <a href="https://drive.google.com/drive/folders/14XaHVfVZThekhPL1f15Xny2RJg-sayQh?usp=drive_link"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa fa-database"></i>
+                  </span>
+                  <span>Dataset</span>
+                  </a>
+              </span>
+              <!-- <span class="link-block">
+                <a href="https://huggingface.co/spaces/gokceuludogan/WarmMolGen"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa fa-laptop"></i>
+                  </span>
+                  <span>Demo</span>
+                  </a>
+              </span> -->
+              <!-- <span class="link-block">
+                <a href="./static/RECOMB2023.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa-brands fa-slideshare"></i>
+                  </span>
+                  <span>Poster</span>
+                  </a>
+              </span> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/dataset.png" >
+      <h2 class="subtitle has-text-centered">
+        Signers of BUTID dataset
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>With recent advances in deep learning, Sign Language
+            Translation (SLT) technologies have shifted toward largescale
+            training with pretrained large language models
+            (LLMs). However, most language models and datasets are
+            provided for American Sign Language (ASL) and British
+            Sign Language (BSL). To achieve similar advances for
+            Turkish Sign Language (Türk İşaret Dili - TID) translation,
+            we present the first large-scale open-source translation
+            dataset, comprising over 500 hours of video footage
+            and aligned Turkish translations by utilizing publicly available
+            YouTube content. In this work, our dataset provides
+            a scalable and reproducible framework for SLT. We provide
+            SLT benchmarks using baseline models based on pretrained
+            LLMs as well as the additional improvements with
+            augmentations on text and sign modalities.</p>
+          
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Qualitative Examples</h2>
+  </div>
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/sign_examples.drawio (1) (1).png" >
+      <h2 class="subtitle has-text-centered">
+        Qualitative Examples from the BUTID dataset
+      </h2>
+    </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgements</h2>
+    The computations in this work are partially performed at
+TUBITAK ULAKBIM, High Performance and Grid Computing
+Center (TRUBA resources), and EuroHPC LUMI,
+whose funding and resources were instrumental in completing
+this research. We acknowledge EuroHPC Joint Undertaking
+for awarding project ID EHPC-AI-2024A03-075 access
+to LUMI at CSC, Finland. We express our gratitude
+to the Sesli Betimleme Derne˘gi (SeBeDer) for their encouragement
+and for providing consent for this work.
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{temizer2023exploring,
+      title={Exploring Data-Driven Chemical SMILES Tokenization Approaches to Identify Key Protein-Ligand Binding Moieties}, 
+      author={Asu Büşra Temizer and Gökçe Uludoğan and Rıza Özçelik and Taha Koulani and Elif Ozkirimli and Kutlu O. Ulgen and Nilgün Karalı and Arzucan Özgür},
+      year={2023},
+      eprint={2210.14642},
+      archivePrefix={arXiv},
+      primaryClass={q-bio.BM}
+}</code></pre>
+  </div>
+</section>
+
+
+    
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" 
+          href="https://tabilab.cmpe.boun.edu.tr">
+          <i class="fas fa-home"></i>
+      </a>
+      <!--
+      <a class="icon-link"
+         href="https://doi.org/">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+       -->
+      <a class="icon-link" 
+        href="https://github.com/boun-tabi/exploring-chemical-words" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+      <a class="icon-link" 
+        href="https://doi.org/10.5281/zenodo.10245264"
+                   class="external-link button is-normal is-rounded is-dark">
+        <i class="fa fa-database"></i>
+      </a>
+      <!--  
+      <a class="icon-link" 
+        href="https://huggingface.co/spaces/gokceuludogan/WarmMolGen"
+                   class="external-link button is-normal is-rounded is-dark">
+        <i class="fa fa-laptop"></i>
+      </a> -->
+      <a  class="icon-link" 
+        href="./static/RECOMB2023.pdf"
+        class="external-link button is-normal is-rounded is-dark">
+        <i class="fa-brands fa-slideshare"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is adapted from <a
+              href="https://github.com/nerfies/nerfies.github.io">https://github.com/nerfies/nerfies.github.io</a> and licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
